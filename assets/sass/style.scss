@@ -20,42 +20,34 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Reset
+# Normalize
 # Document
-# Layout
-# Navigation
 # Structure
-# Contents
-# Elements
+# Navigation
+# Content
+# Media
+	## Captions
+	## Galleries
 # Widgets
-# Sections
-# External Plugins
+# Plugins
 
 --------------------------------------------------------------*/
 @import "variables";
+@import "mixins";
 
 /*--------------------------------------------------------------
-# Reset
+#. Normalize
 --------------------------------------------------------------*/
-/* Reset already include in bootstrap */
+@import "reset";
 
 /*--------------------------------------------------------------
-# Document Setup
+# Document
 --------------------------------------------------------------*/
 @import "document";
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-@import "navigation";
-
-/*--------------------------------------------------------------
-# Layout
---------------------------------------------------------------*/
-@import "layout";
 
 /*--------------------------------------------------------------
 # Structure
@@ -63,14 +55,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "structure";
 
 /*--------------------------------------------------------------
-# Contents
+# Navigation
 --------------------------------------------------------------*/
-@import "contents";
+@import "navigation";
 
 /*--------------------------------------------------------------
-# Elements
+# Content
 --------------------------------------------------------------*/
-@import "elements";
+@import "content";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media";
 
 /*--------------------------------------------------------------
 # Widgets
@@ -78,11 +75,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "widgets";
 
 /*--------------------------------------------------------------
-# Sections
+# Plugins
 --------------------------------------------------------------*/
-@import "sections";
-
-/*--------------------------------------------------------------
-# External Plugins
---------------------------------------------------------------*/
-@import "external_plugins";
+@import "plugins";
